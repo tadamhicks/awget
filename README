@@ -1,0 +1,24 @@
+README
+
+Compile for application is very simple, either enter "make" to compile both awget.c and ss.c or enter "make awget" or "make ss" to compile specific apps.
+
+Make will default compile to objects named "awget" and "ss" respectively.
+
+To run:
+
+    Stepping Stones
+        A) Must specify port using flat (e.g. ./ss -p 8888).
+        B) Port range is not limited, so please have respect for other services running on test servers.
+        C) Will continue listening until you break the process <Ctrl+C>.  This would be handy if we wanted to create an autonymous system that others could use.
+
+    Anonymous-Web Get
+        A) Must specify target URL in good form (e.g. http://...).
+        B) If no chainfile is provided, will use default chainfile named chaingang.txt.
+        C) If you pass a "-c" flag with no filename it will abort.
+        D) Usage format is ./awget <URL> [-c chainfilename.txt].
+
+    Chainfile
+        A) Chainfile must specify the number of stepping stones.
+        B) Chainfile must have stone tuples in proper format (e.g. <IP ADDRESS> <PORT NUM>).
+
+
